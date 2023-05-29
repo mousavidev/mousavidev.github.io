@@ -1,5 +1,5 @@
-# Simple-one-page-personal-web
-Hadi Mousavi, It's a software developer and architecture.
+# Personal Website
+Hadi Mousavi is a software developer and architecture.
 
 <hr />
 <h1>
