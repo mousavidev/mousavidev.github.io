@@ -1,0 +1,39 @@
+.avatar {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.avatar > .avatar-image {
+    place-self: center;
+    width: Min(20em, 90vw);
+    border: solid 1.25em transparent;
+    padding: 0.75em;
+    border-radius: 50%;
+    background: radial-Gradient(circle at calc(50% + (50% - 0.625em)*1) calc(50% + (50% - 0.625em)*0), #f03355 calc(0.625em - 1px), transparent 0.625em), radial-Gradient(circle at calc(50% + (50% - 0.625em)*0) calc(50% + (50% - 0.625em)*1), #514b82 calc(0.625em - 1px), transparent 0.625em), radial-Gradient(circle at calc(50% + (50% - 0.625em)*-1) calc(50% + (50% - 0.625em)*0), #ffa516 calc(0.625em - 1px), transparent 0.625em), radial-Gradient(circle at calc(50% + (50% - 0.625em)*0) calc(50% + (50% - 0.625em)*-1), #25b09b calc(0.625em - 1px), transparent 0.625em), conic-Gradient(#f03355 0% 90deg, #514b82 0% 180deg, #ffa516 0% 270deg, #25b09b 0% 360deg);
+    background-origin: border-box;
+    --mask: radial-Gradient(closest-side, red calc(100% - 1.25em - 0.75em - 1px), transparent calc(100% - 1.25em - 0.75em) calc(100% - 1.25em), red calc(100% - 1.25em + 1px) calc(100% - 1px), transparent);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+    margin: 16px 0;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(250, 250, 250, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.personal-info > .title {
+    font-size: 4em;
+}
+
+.personal-info > .subtitle {
+    font-size: 2em;
+}

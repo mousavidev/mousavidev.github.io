@@ -2,127 +2,45 @@
 
 <html>
   <head>
-    <title>mousavidev | software developer & architecture</title>
+    <title>&#64;mousavidev (Software Engineer)</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-      .avatar {
-        display: inline-block;
-        border-radius: 50%;
-      }
-
-      .avatar > .avatar-image {
-        place-self: center;
-        width: Min(20em, 90vw);
-        border: solid 1.25em transparent;
-        padding: 0.75em;
-        border-radius: 50%;
-        background: radial-Gradient(circle at calc(50% + (50% - 0.625em)*1) calc(50% + (50% - 0.625em)*0), #f03355 calc(0.625em - 1px), transparent 0.625em), radial-Gradient(circle at calc(50% + (50% - 0.625em)*0) calc(50% + (50% - 0.625em)*1), #514b82 calc(0.625em - 1px), transparent 0.625em), radial-Gradient(circle at calc(50% + (50% - 0.625em)*-1) calc(50% + (50% - 0.625em)*0), #ffa516 calc(0.625em - 1px), transparent 0.625em), radial-Gradient(circle at calc(50% + (50% - 0.625em)*0) calc(50% + (50% - 0.625em)*-1), #25b09b calc(0.625em - 1px), transparent 0.625em), conic-Gradient(#f03355 0% 90deg, #514b82 0% 180deg, #ffa516 0% 270deg, #25b09b 0% 360deg);
-        background-origin: border-box;
-        --mask: radial-Gradient(closest-side, red calc(100% - 1.25em - 0.75em - 1px), transparent calc(100% - 1.25em - 0.75em) calc(100% - 1.25em), red calc(100% - 1.25em + 1px) calc(100% - 1px), transparent);
-        -webkit-mask: var(--mask);
-        mask: var(--mask);
-      }
-      .personal-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .glass-box {
-        padding: 8px 16px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-      }
-    </style>
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/avatar.css">
+    <link rel="stylesheet" href="assets/css/page.css">
+    <link rel="stylesheet" href="assets/css/animated-background.css">
+    <link rel="stylesheet" href="assets/css/brands.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
   </head>
-  <body class="is-preload">
-    <div id="wrapper">
-      <div id="bg"></div>
-      <div id="overlay"></div>
-      <div id="main">
-        <!-- Header -->
-        <header id="header">
-          <div class="avatar">
-            <img class="avatar-image" src="assets/images/personal-photo.jpeg" >
-          </div>
-          <div class="personal-info">
-            <div class="glass-box">
-              <h1>Hadi Mousavi</h1>
-              <p>Software Developer & Architecture</p>
-            </div>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href="https://twitter.com/mousavidev" class="icon brands fa-twitter"
-                  ><span class="label">Twitter</span></a
-                >
-              </li>
-              <li>
-                <a href="https://instagram.com/mousavidev" class="icon brands fa-instagram"
-                  ><span class="label">Instagram</span></a
-                >
-              </li>
-              <li>
-                <a href="https://facebook.com/mousavidev" class="icon brands fa-facebook"
-                  ><span class="label">Facebook</span></a
-                >
-              </li>
-              <li>
-                <a href="https://telegram.com/mousavidev" class="icon brands fa-telegram"
-                  ><span class="label">Telegram</span></a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/mousavidev" class="icon brands fa-github"
-                  ><span class="label">Github</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="mailto:mousavidev@gmail.com"
-                  class="icon solid fa-envelope"
-                  ><span class="label">Email</span></a
-                >
-              </li>
-
-              <!-- You can add more social media links 
-			  <li>
-                <a href="#" class="icon brands fa-CHANGE_HERE"
-                  ><span class="label">CHANGE HERE</span></a
-                >
-              </li> -->
-            </ul>
-          </nav>
-        </header>
-
-        <!-- Footer -->
-        <footer id="footer">
-          <span class="copyright">&copy; Published by <a href="http://t.me/mousavidev">mousavidev</a>.</span>
-        </footer>
-      </div>
+  <body>
+    <div class='ripple-background'>
+      <div class='circle xxlarge shade1'></div>
+      <div class='circle xlarge shade2'></div>
+      <div class='circle large shade3'></div>
+      <div class='circle mediun shade4'></div>
+      <div class='circle small shade5'></div>
     </div>
-    <script>
-      window.onload = function () {
-        document.body.classList.remove("is-preload");
-      };
-      window.ontouchmove = function () {
-        return false;
-      };
-      window.onorientationchange = function () {
-        document.body.scrollTop = 0;
-      };
-    </script>
+
+    <div class="container">
+      <div class="avatar">
+        <img class="avatar-image" src="assets/images/personal-photo.jpeg" >
+      </div>
+      <div class="personal-info">
+        <span class="title">Hadi Mousavi</span>
+        <span class="subtitle">Software Engineer</span>
+      </div>
+      <div class="flex-spacer"></div>
+      <nav class="links">
+        <a target="_blank" href="https://twitter.com/mousavidev" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+        <a target="_blank" href="https://instagram.com/mousavidev" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+        <a target="_blank" href="https://facebook.com/mousavidev" class="icon brands fa-facebook"><span class="label">Facebook</span></a>
+        <a target="_blank" href="https://telegram.com/mousavidev" class="icon brands fa-telegram"><span class="label">Telegram</span></a>
+        <a target="_blank" href="https://github.com/mousavidev" class="icon brands fa-github"><span class="label">Github</span></a>
+        <a target="_blank" href="mailto:mousavidev@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a>
+      </nav>
+      <footer class="footer">
+        <span class="copyright"><span class="fa fa-calendar-check"></span> 2023 | By <a href="http://t.me/mousavidev">@mousavidev</a>.</span>
+      </footer>
+    </div>
   </body>
 </html>
